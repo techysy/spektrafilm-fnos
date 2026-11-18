@@ -1,0 +1,27 @@
+# upstream checkout (pinned by UPSTREAM_PIN; re-cloned by build.sh)
+upstream/
+
+# build artifacts
+build/
+dist/
+*.partial
+__pycache__/
+*.pyc
+
+# frontend / bridge build output
+webui/frontend/app/
+webui/frontend/dist/
+webui/bridge/www/
+
+# fpk staging (only the final .fpk ships, as a Release asset)
+webui/fpk/dist/
+webui/fpk-dist/
+
+# python venv (the runtime is installed into the image, not the repo)
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
